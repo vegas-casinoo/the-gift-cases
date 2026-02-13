@@ -89,3 +89,26 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
   border: 1px solid rgba(255,255,255,.14);
 }
 .bn-t{ font-size: 11px; }
+
+.seg{
+  display:flex;
+  gap:6px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+}
+.seg-btn{
+  flex:1;
+  border:0;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  transition: background var(--tap), transform var(--tap);
+}
+.seg-btn.active{
+  color: var(--text);
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.12);
+}
