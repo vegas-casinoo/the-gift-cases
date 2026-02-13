@@ -1,0 +1,54 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--text);
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial;
+  background:
+    radial-gradient(1200px 900px at 20% -10%, rgba(41,214,255,.20), transparent 60%),
+    radial-gradient(900px 700px at 110% 30%, rgba(168,85,255,.18), transparent 55%),
+    radial-gradient(800px 700px at 20% 110%, rgba(53,255,177,.10), transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+
+#app{
+  min-height:100%;
+  padding: 18px 16px 92px;
+}
+
+h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
+.small{color:var(--muted); font-size:13px}
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radiusLg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.row{display:flex; align-items:center; gap:10px}
+.grid{display:grid; grid-template-columns: 1fr 1fr; gap:12px}
+
+.btn{
+  border: 0;
+  border-radius: 16px;
+  padding: 12px 14px;
+  color: var(--text);
+  background: rgba(41,214,255,.14);
+  border: 1px solid rgba(41,214,255,.25);
+  transition: transform var(--tap), filter var(--tap), background var(--tap);
+}
+.btn:active{transform: scale(.98)}
+.btn.primary{
+  background: linear-gradient(90deg, rgba(41,214,255,.22), rgba(168,85,255,.20));
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+.pill{
+  display:inline-flex; align-items:center; gap:8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+}
