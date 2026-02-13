@@ -112,3 +112,25 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
   background: rgba(255,255,255,.10);
   border: 1px solid rgba(255,255,255,.12);
 }
+
+.case{ padding: 14px; text-align:center; }
+.case-img{
+  position:relative;
+  height: 132px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+  overflow:hidden;
+  display:grid; place-items:center;
+}
+.case-img img{ width: 120px; height: 120px; object-fit:contain; }
+.badge{
+  position:absolute; left: 10px; top: 10px;
+  padding: 6px 10px; border-radius: 999px;
+  font-size: 12px;
+  background: rgba(41,214,255,.14);
+  border: 1px solid rgba(41,214,255,.25);
+}
+.case-name{ font-size: 18px; font-weight: 700; margin-top: 10px; }
+.dots{ display:flex; gap:6px; justify-content:center; margin: 8px 0 12px; opacity:.75 }
+.dot{ width:8px; height:8px; border-radius:999px; background: rgba(255,255,255,.35); }
