@@ -37,7 +37,7 @@ export async function renderProfile(root) {
           <div class="small">Ваш баланс</div>
           <div style="font-size:44px; font-weight:900; display:flex; align-items:center; justify-content:center; gap:10px;">
             <span>${Number(bal.wallet.balance_ton).toFixed(2)}</span>
-            <img src="/assets/icons/ton.svg" width="34" height="34" alt="TON"/>
+            <img src="/assets/icons/ton.PNG" width="34" height="34" alt="TON"/>
           </div>
 
           <div class="row" style="justify-content:center; gap:22px; margin: 10px 0 16px;">
