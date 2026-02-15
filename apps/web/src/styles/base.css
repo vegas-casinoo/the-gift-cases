@@ -225,3 +225,12 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
 .bn-item.active .bn-ic img{
   filter: none;
 }
+
+#page{
+  position: relative;
+  min-height: calc(100vh - 92px);
+}
+
+.page{
+  will-change: transform, opacity;
+}
