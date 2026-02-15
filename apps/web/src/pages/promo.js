@@ -1,6 +1,6 @@
 import { api } from "../lib/api.js";
 
-export async function renderPromo(root) {
+export async function renderCases(root, opts = {}) {
   root.innerHTML = `
     <h1>Промо</h1>
     <div class="card" style="padding:14px;">
