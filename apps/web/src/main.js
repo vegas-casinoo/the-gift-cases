@@ -12,34 +12,22 @@ ready();
 
 const app = document.getElementById("app");
 
-function shell(contentHtml) {
-  app.innerHTML = `
-    <div id="page">${contentHtml}</div>
-    ${BottomNav()}
-  `;
-  bindBottomNav(document.body);
-}
+app.innerHTML = `
+  <div id="page">
+    <div class="page">
+      <div id="root"></div>
+    </div>
+  </div>
+  ${BottomNav()}
+`;
 
-addRoute("cases", async () => {
-  shell(`<div id="root"></div>`);
-  await renderCases(document.querySelector("#root"));
-});
-addRoute("profile", async () => {
-  shell(`<div id="root"></div>`);
-  await renderProfile(document.querySelector("#root"));
-});
-addRoute("history", async () => {
-  shell(`<div id="root"></div>`);
-  await renderHistory(document.querySelector("#root"));
-});
-addRoute("promo", async () => {
-  shell(`<div id="root"></div>`);
-  await renderPromo(document.querySelector("#root"));
-});
-addRoute("support", async () => {
-  shell(`<div id="root"></div>`);
-  renderSupport(document.querySelector("#root"));
-});
+bindBottomNav(document.body);
+
+addRoute("cases", renderCases);
+addRoute("profile", renderProfile);
+addRoute("history", renderHistory);
+addRoute("promo", renderPromo);
+addRoute("support", renderSupport);
 
 window.addEventListener("hashchange", render);
 render();
