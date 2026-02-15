@@ -6,7 +6,7 @@ function esc(s) {
   return String(s || "").replace(/[<>&"]/g, (c) => ({ "<":"&lt;", ">":"&gt;", "&":"&amp;", '"':"&quot;" }[c]));
 }
 
-export async function renderProfile(root) {
+export async function renderCases(root, opts = {}) {
   root.innerHTML = `
     <h1>Профиль</h1>
     <div class="card" style="padding:14px;">
