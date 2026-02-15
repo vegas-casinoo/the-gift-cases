@@ -1,4 +1,4 @@
-export function renderSupport(root) {
+export async function renderCases(root, opts = {}) {
   root.innerHTML = `
     <h1>Поддержка</h1>
     <div class="card" style="padding:14px;">
