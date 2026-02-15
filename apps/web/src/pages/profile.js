@@ -1,7 +1,7 @@
 import { api } from "../lib/api.js";
 import { openDeposit } from "./cases.js";
 
-export async function renderProfile(root) {
+export async function renderProfile(root, opts = {}) {
   const me = await api("/me");
   const bal = await api("/wallet/balance");
 
