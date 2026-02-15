@@ -73,9 +73,7 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
 }
 
 .bn-item{
-  flex: 1 1 0;
-  min-width: 0;
-
+  flex: 1;
   background: transparent;
   border: 0;
   padding: 6px 0;
@@ -85,19 +83,22 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap: 6px;
+  gap:6px;
+
+  transition: .2s ease;
 }
 
 .bn-ic{
-  width: 40px; height: 40px;
-  display:grid; place-items:center;
+  width: 42px;
+  height: 42px;
+  display:grid;
+  place-items:center;
+
   border-radius: 999px;
-
   background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.12);
 
-  font-size: 18px; /* чтобы emoji были одного размера */
-  line-height: 1;
+  transition: .2s ease;
 }
 
 .bn-t{
@@ -114,9 +115,12 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
 }
 
 .bn-item.active .bn-ic{
-  border-color: rgba(41,214,255,.35);
-  background: rgba(41,214,255,.12);
-  box-shadow: 0 0 0 6px rgba(41,214,255,.06);
+  transform: scale(1.15);
+  border-color: rgba(41,214,255,.45);
+  background: rgba(41,214,255,.15);
+  box-shadow:
+    0 0 18px rgba(41,214,255,.25),
+    0 0 0 6px rgba(41,214,255,.08);
 }
 
 .bn-item.main.active .bn-ic{
