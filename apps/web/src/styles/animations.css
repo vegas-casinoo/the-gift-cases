@@ -9,3 +9,8 @@
   50% { filter: drop-shadow(0 0 18px rgba(41,214,255,.35)) }
 }
 .glow{ animation: glowPulse 2.2s ease-in-out infinite; }
+
+.bn-item.tap .bn-ic{
+  transform: scale(0.92);
+  filter: drop-shadow(0 0 18px rgba(41,214,255,.25));
+}
