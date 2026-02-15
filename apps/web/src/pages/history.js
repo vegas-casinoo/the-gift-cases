@@ -1,6 +1,6 @@
 import { api } from "../lib/api.js";
 
-export async function renderHistory(root) {
+export async function renderCases(root, opts = {}) {
   const { history } = await api("/history");
   root.innerHTML = `
     <h1>История</h1>
