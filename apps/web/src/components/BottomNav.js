@@ -23,8 +23,16 @@ export function BottomNav() {
   </nav>`;
 }
 
+import { go } from "../lib/router.js";
+import { haptic } from "../lib/telegram.js";
+
 export function bindBottomNav(root) {
   root.querySelectorAll("[data-go]").forEach(btn => {
-    btn.addEventListener("click", () => go(btn.dataset.go));
+    btn.addEventListener("click", () => {
+      haptic("light");
+      btn.classList.add("tap");
+      setTimeout(() => btn.classList.remove("tap"), 180);
+      go(btn.dataset.go);
+    });
   });
 }
