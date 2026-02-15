@@ -1,5 +1,4 @@
 import { go, getRoute } from "../lib/router.js";
-import { haptic } from "../lib/telegram.js";
 
 const items = [
   { id: "profile", label: "Профиль", icon: "profile.svg" },
@@ -29,15 +28,9 @@ export function BottomNav() {
   `;
 }
 
-import { go } from "../lib/router.js";
-import { haptic } from "../lib/telegram.js";
-
 export function bindBottomNav(root) {
-  root.querySelectorAll("[data-go]").forEach(btn => {
+  root.querySelectorAll("[data-go]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      haptic("light");
-      btn.classList.add("tap");
-      setTimeout(() => btn.classList.remove("tap"), 180);
       go(btn.dataset.go);
     });
   });
