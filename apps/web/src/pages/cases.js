@@ -6,7 +6,7 @@ import { ModalSheet, bindSheet } from "../components/ModalSheet.js";
 let tab = "all";
 let sheetEl = null;
 
-export async function renderCases(root) {
+export async function renderCases(root, opts = {}) {
   root.innerHTML = `
     <h1>Кейсы</h1>
     ${SegmentedTabs({ active: tab, tabs: [
