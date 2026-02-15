@@ -85,7 +85,10 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
   justify-content:center;
   gap:6px;
 
-  transition: .2s ease;
+transition: transform 220ms cubic-bezier(.2,.9,.2,1),
+              box-shadow 220ms cubic-bezier(.2,.9,.2,1),
+              background 220ms ease,
+              border-color 220ms ease;
 }
 
 .bn-ic{
@@ -98,7 +101,12 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.12);
 
-  transition: .2s ease;
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1),
+              box-shadow 220ms cubic-bezier(.2,.9,.2,1),
+              background 220ms ease,
+              border-color 220ms ease;
+              
+  transform: scale(1.12);
 }
 
 .bn-t{
@@ -115,7 +123,7 @@ h1{margin: 10px 0 12px; font-size:34px; letter-spacing:.3px}
 }
 
 .bn-item.active .bn-ic{
-  transform: scale(1.15);
+  transform: scale(1.12);
   border-color: rgba(41,214,255,.45);
   background: rgba(41,214,255,.15);
   box-shadow:
