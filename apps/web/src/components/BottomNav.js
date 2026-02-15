@@ -3,7 +3,7 @@ import { go, getRoute } from "../lib/router.js";
 const items = [
   { id:"profile", label:"Профиль", icon:"profile.svg" },
   { id:"history", label:"История", icon:"history.svg" },
-  { id:"cases", label:"Играть", icon:"play.svg", main:true },
+  { id:"cases", label:"Играть", icon:"play.svg" },
   { id:"promo", label:"Промо", icon:"gift.svg" },
   { id:"support", label:"Поддержка", icon:"support.svg" },
 ];
