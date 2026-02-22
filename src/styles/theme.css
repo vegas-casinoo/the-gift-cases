@@ -1,0 +1,32 @@
+:root {
+  --bg: #0f0f1a;
+  --card: #1a1a2e;
+  --accent: #8b5cf6;
+  --accent2: #a855f7;
+  --text-muted: #9ca3af;
+}
+
+.header {
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  text-align: center;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.button {
+  background: var(--accent);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
